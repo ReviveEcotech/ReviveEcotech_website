@@ -1,4 +1,3 @@
-import Navbar from "./_components/navbar";
 import Hero from "./_components/hero";
 import BePartOfRevive from "./_components/be-partof-revive";
 import Footer from "./_components/footer";
@@ -12,7 +11,6 @@ import WhyChoose from "./_components/why-choose";
 export default function Home() {
   return (
     <div>
-      <Navbar/>
       <Hero/>
       <HowItWorks/>
       <WhyChoose/>
