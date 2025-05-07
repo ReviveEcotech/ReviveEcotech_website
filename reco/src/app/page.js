@@ -10,7 +10,7 @@ import WhyChoose from "./_components/why-choose";
 
 export default function Home() {
   return (
-    <div>
+    <div >
       <Hero/>
       <HowItWorks/>
       <WhyChoose/>
