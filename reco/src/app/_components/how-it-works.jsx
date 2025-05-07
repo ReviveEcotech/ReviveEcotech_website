@@ -7,7 +7,7 @@ import recycleLogoImage from '../../images/recycle_logo.png';
 
 const Step = ({ imageUrl, title, description }) => {
   return (
-    <div className="w-full lg:w-1/3 md:w-1/2 p-4 flex flex-col items-center mb-8 text-center rounded-3xl border border-black bg-gradient-to-b from-[#ebebe9] to-[#d4dfad] transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+    <div className="w-full lg:w-1/3 md:w-1/2 p-4 pb-14 flex flex-col items-center mb-8 text-center rounded-3xl border border-black bg-gradient-to-b from-[#ebebe9] to-[#d4dfad] transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
       <h3 className="w-full px-1.5 py-2 rounded-xl text-xl lg:text-2xl font-bold mb-6 text-[#013C5A] bg-[#A7CB4F]">
         {title}
       </h3>
@@ -37,7 +37,7 @@ const HowItWorks = () => {
           <span className="block w-40 lg:w-64 h-1 bg-[#a7cb4f] mx-auto mt-3"></span>
         </h2>
 
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 py-8 lg:py-10 px-5 lg:px-20 mt-6 lg:mt-9 items-center rounded-2xl bg-[#013c5a]">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-14 py-8 lg:py-10 px-5 lg:px-20 mt-6 lg:mt-9 items-center rounded-2xl bg-[#013c5a]">
           <Step
             imageUrl={deviceLogoImage} 
             title="How It Works"
