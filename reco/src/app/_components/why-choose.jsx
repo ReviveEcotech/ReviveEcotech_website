@@ -12,7 +12,7 @@ const Feature = ({ icon, title, description }) => {
 
 const WhyChooseUs = () => {
   return (
-    <section id="why-choose-us" className="py-20 bg-[#013C5A] border border-black mt-24 mx-12">
+    <section id="why-choose-us" className="py-20 bg-[#013C5A] mt-24 mx-12">
       <div className="container mx-auto px-4">
         <h2 className="text-[40px] font-bold text-center text-[#A7CB4F] mb-12 relative">
           Why Choose Revive

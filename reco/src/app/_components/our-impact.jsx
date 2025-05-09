@@ -49,8 +49,8 @@ const CounterItem = ({ icon, endValue, label }) => {
   }, [endValue]);
 
   return (
-    <div ref={counterRef} className="font-bold text-3xl mx-5 mb-5 min-w-[200px] text-[#013C5A] border border-amber-900 flex flex-col items-center justify-between">
-      <div className=" text-yellow-500 mb-4 flex justify-center border border-amber-900">
+    <div ref={counterRef} className="font-bold text-3xl mx-5 mb-5 min-w-[200px] text-[#013C5A] flex flex-col items-center justify-between">
+      <div className=" text-yellow-500 mb-6 flex justify-center ">
         <Image
           src={icon}
           width={100}
@@ -71,12 +71,15 @@ const ImpactCounter = () => {
   return (
     <section className="py-20 text-white text-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white mb-12 relative">
-          Our Impact
-          <span className="block w-20 h-1 bg-yellow-500 mx-auto mt-4"></span>
+        <h2 className="text-4xl font-bold text-white mb-2">
+          Our
+          <span>
+            <span className="text-[#a7cb4f]"> Impact</span>
+          </span>
+          <span className="block w-52 h-1 bg-[#a7cb4f] mx-auto mt-3"></span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mt-12 py-9 bg-[#d9d9d9] rounded-3xl shadow-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mt-12 py-9 bg-[#d9d9d9] rounded-3xl shadow-sm items-baseline">
           <CounterItem
             icon={recycle}
             endValue={1250}

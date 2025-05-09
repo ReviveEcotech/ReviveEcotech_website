@@ -10,7 +10,7 @@ import WhyChoose from "./_components/why-choose";
 
 export default function Home() {
   return (
-    <div >
+    <div className="bg-[#023d5b]">
       <Hero/>
       <HowItWorks/>
       <WhyChoose/>
