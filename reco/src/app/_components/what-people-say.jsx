@@ -22,26 +22,36 @@ const TestimonialCard = ({ avatar, name, role, quote }) => {
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-green-800 mb-12 relative">
-          What People Say
-          <span className="block w-20 h-1 bg-yellow-500 mx-auto mt-4"></span>
+
+        <h2 className="text-4xl text-center font-bold text-white mb-2 relative">
+          What
+          <span>
+            <span className="text-[#a7cb4f]"> People Say</span>
+          </span>
+          <span className="block w-80 h-1 bg-[#a7cb4f] mx-auto mt-3"></span>
         </h2>
-        
-        <div className="flex flex-wrap justify-center gap-8 mt-12">
-          <TestimonialCard 
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-12 py-9 justify-items-center lg:mx-11">
+          <TestimonialCard
             avatar="https://randomuser.me/api/portraits/women/43.jpg"
             name="Priya K."
             role="Household User"
-            quote="Easy to use and great rewards for my dry waste. I've earned over ₹2000 in just three months while helping the environment!"
+            quote="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
           />
-          
-          <TestimonialCard 
+
+          <TestimonialCard
             avatar="https://randomuser.me/api/portraits/men/32.jpg"
             name="Rajesh P."
             role="Industry Partner"
-            quote="Reliable, sorted materials—perfect for our manufacturing needs. Revives has become an essential part of our supply chain."
+            quote="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+          />
+          <TestimonialCard
+            avatar="https://randomuser.me/api/portraits/men/32.jpg"
+            name="Rajesh P."
+            role="Industry Partner"
+            quote="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
           />
         </div>
       </div>

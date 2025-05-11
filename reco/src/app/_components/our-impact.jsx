@@ -53,6 +53,7 @@ const CounterItem = ({ icon, endValue, label }) => {
       <div className=" text-yellow-500 mb-6 flex justify-center ">
         <Image
           src={icon}
+          alt='icon'
           width={100}
           height={100}
           className="object-contain"
@@ -79,7 +80,7 @@ const ImpactCounter = () => {
           <span className="block w-52 h-1 bg-[#a7cb4f] mx-auto mt-3"></span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mt-12 py-9 bg-[#d9d9d9] rounded-3xl shadow-sm items-baseline">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mt-12 py-9 bg-[#d9d9d9] rounded-3xl shadow-sm items-baseline lg:mx-11">
           <CounterItem
             icon={recycle}
             endValue={1250}
