@@ -1,29 +1,58 @@
+import Image from 'next/image';
 import React from 'react';
 
-const TestimonialCard = ({ avatar, name, role, quote }) => {
+import avatar from '../../images/Avatar.png';
+import asterisk from '../../images/asterisk.png';
+import neg_star from '../../images/neg_star.png';
+import pos_star from '../../images/pos_star.png';
+
+const TestimonialCard = ({ avatar, name, quote, star }) => {
   return (
-    <div className="flex-1 min-w-[300px] max-w-md bg-gray-50 p-8 rounded-lg shadow-sm">
-      <div className="flex items-center mb-6">
-        <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
-          <img src={avatar} alt={name} className="w-full h-full object-cover" />
-        </div>
-        <div>
-          <div className="font-semibold text-green-800">{name}</div>
-          <div className="text-gray-500 text-sm">{role}</div>
-        </div>
+    <div className="flex flex-col py-10 md:py-14  lg:py-16 xl:py-20 lg:px-9 xl:px-20 gap-6 bg-gray-50 p-8 rounded-3xl shadow-sm text-center item-center justify-center">
+      <div className='flex item-center justify-center '>
+        <Image
+          src={avatar}
+          alt='icon'
+          width={100}
+          height={100}
+          className="object-contain"
+          priority
+        />
       </div>
-      <div className="relative italic">
-        <div className="absolute -top-5 -left-2 text-6xl text-green-500 opacity-30">"</div>
-        <p className="relative z-10">{quote}</p>
+      <div className='flex item-center justify-center '>
+        <Image
+          src={asterisk}
+          alt='icon'
+          width={24}
+          height={24}
+          className="object-contain"
+          priority
+        />
+      </div>
+      <div>
+        <p className='text-[17px]'>{quote}</p>
+      </div>
+      <div className='text-[18px]'>
+      {name}
+        <div className="flex gap-2 justify-center mt-4">
+          {[...Array(5)].map((_, index) => (
+            <Image
+              key={index}
+              src={index < star ? pos_star : neg_star}
+              alt="star rating"
+              width={24}
+              height={24}
+              className="object-contain"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
-
 const Testimonials = () => {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="container w-full mx-auto px-4">
 
         <h2 className="text-4xl text-center font-bold text-white mb-2 relative">
           What
@@ -33,29 +62,28 @@ const Testimonials = () => {
           <span className="block w-80 h-1 bg-[#a7cb4f] mx-auto mt-3"></span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-12 py-9 justify-items-center lg:mx-11">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-7 py-9 justify-items-center lg:mx-11">
           <TestimonialCard
-            avatar="https://randomuser.me/api/portraits/women/43.jpg"
-            name="Priya K."
-            role="Household User"
+            avatar={avatar}
+            name="Lora Smith"
             quote="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+            star="4"
           />
 
           <TestimonialCard
-            avatar="https://randomuser.me/api/portraits/men/32.jpg"
-            name="Rajesh P."
-            role="Industry Partner"
+            avatar={avatar}
+            name="Lora Smith"
             quote="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+            star="5"
           />
           <TestimonialCard
-            avatar="https://randomuser.me/api/portraits/men/32.jpg"
-            name="Rajesh P."
-            role="Industry Partner"
+            avatar={avatar}
+            name="Lora Smith"
             quote="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+            star="5"
           />
         </div>
       </div>
-    </section>
   );
 };
 
