@@ -1,25 +1,35 @@
 import React from 'react';
+import household from '../../images/household.png';
+import industry from '../../images/industry.png';
+import Image from 'next/image';
 
 const ServeCard = ({ image, title, benefits, buttonText, buttonLink }) => {
   return (
-    <div className="flex-1 min-w-[300px] bg-white rounded-lg overflow-hidden shadow-md">
-      <div className="h-48 overflow-hidden">
-        <img 
-          src={image} 
-          alt={title} 
-          className="w-full h-full object-cover transition duration-500 hover:scale-110" 
-        />
+    <div className="flex flex-col py-3.5 lg:py-6 xl:pb-16 lg:px-9 xl:px-20 gap-6 bg-gray-50 p-8 rounded-3xl shadow-sm item-center h-full justify-between">
+      <div>
+        <p className="text-4xl flex font-normal justify-center mb-3">{title}</p>
+        <div className='mb-3'>
+          <Image
+            src={image}
+            alt={title}
+            width={430}
+            height={287}
+            priority
+          />
+        </div>
+        <div>
+          <ul className="list-disc pl-5 text-xl md:text-[1.7rem] font-light mb-3">
+            {benefits.map((benefit, index) => (
+              <li key={index}>{benefit}</li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="p-8">
-        <h3 className="text-xl font-semibold mb-4 text-green-800">{title}</h3>
-        <ul className="list-disc pl-5 mb-6">
-          {benefits.map((benefit, index) => (
-            <li key={index} className="mb-2">{benefit}</li>
-          ))}
-        </ul>
-        <a 
-          href={buttonLink} 
-          className="inline-block px-6 py-3 rounded-full bg-green-800 text-white font-semibold border-2 border-green-800 hover:bg-transparent hover:text-green-800 transition duration-300"
+
+      <div className='flex justify-center mt-auto'>
+        <a
+          href={buttonLink}
+          className="bg-[#a7cb4f] hover:bg-[#A7CB4F] text-white px-16 py-1 pb-3 md:text-3xl rounded-2xl text-center mt-4"
         >
           {buttonText}
         </a>
@@ -30,16 +40,19 @@ const ServeCard = ({ image, title, benefits, buttonText, buttonLink }) => {
 
 const WhoWeServe = () => {
   return (
-    <section id="who-we-serve" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-green-800 mb-12 relative">
-          Who We Serve
-          <span className="block w-20 h-1 bg-yellow-500 mx-auto mt-4"></span>
+    <section id="who-we-serve" className="py-2">
+      <div className="container mx-auto px-4 w-full">
+        <h2 className="text-4xl text-center font-bold text-white mb-2 relative">
+          Who
+          <span>
+            <span className="text-[#a7cb4f]"> We Serve</span>
+          </span>
+          <span className="block w-72 h-1 bg-[#a7cb4f] mx-auto mt-3"></span>
         </h2>
-        
-        <div className="flex flex-wrap gap-8 mt-12">
-          <ServeCard 
-            image="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-7 py-9 justify-items-center lg:mx-11">
+          <ServeCard
+            image={household}
             title="Households"
             benefits={[
               "Earn money from your recyclable waste",
@@ -50,9 +63,9 @@ const WhoWeServe = () => {
             buttonText="Learn More"
             buttonLink="#"
           />
-          
-          <ServeCard 
-            image="https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+
+          <ServeCard
+            image={industry}
             title="Industries"
             benefits={[
               "Get affordable, quality raw materials",
@@ -60,7 +73,7 @@ const WhoWeServe = () => {
               "Meet your sustainability goals",
               "Reduce production costs"
             ]}
-            buttonText="Partner With Us"
+            buttonText="Learn More"
             buttonLink="#"
           />
         </div>
