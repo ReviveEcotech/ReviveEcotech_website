@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 const ServeCard = ({ image, title, benefits, buttonText, buttonLink }) => {
   return (
-    <div className="flex flex-col py-3.5 lg:py-6 xl:pb-16 lg:px-9 xl:px-20 gap-6 bg-gray-50 p-8 rounded-3xl shadow-sm item-center h-full justify-between">
+    <div className="flex flex-col py-3.5 lg:py-6 xl:pb-16 lg:px-9 xl:px-20 gap-6 bg-gray-50 p-8 rounded-3xl  item-center h-full justify-between ">
       <div>
-        <p className="text-4xl flex font-normal justify-center mb-3">{title}</p>
+        <p className="text-4xl flex font-normal justify-center mb-6">{title}</p>
         <div className='mb-3'>
           <Image
             src={image}
@@ -29,7 +29,7 @@ const ServeCard = ({ image, title, benefits, buttonText, buttonLink }) => {
       <div className='flex justify-center mt-auto'>
         <a
           href={buttonLink}
-          className="bg-[#a7cb4f] hover:bg-[#A7CB4F] text-white px-16 py-1 pb-3 md:text-3xl rounded-2xl text-center mt-4"
+          className="bg-[#a7cb4f] hover:bg-[#a1ba62] text-white px-16 py-1 pb-3 md:text-3xl rounded-2xl text-center mt-4"
         >
           {buttonText}
         </a>
@@ -40,7 +40,7 @@ const ServeCard = ({ image, title, benefits, buttonText, buttonLink }) => {
 
 const WhoWeServe = () => {
   return (
-    <section id="who-we-serve" className="py-2">
+    <section id="who-we-serve" className="py-20">
       <div className="container mx-auto px-4 w-full">
         <h2 className="text-4xl text-center font-bold text-white mb-2 relative">
           Who
