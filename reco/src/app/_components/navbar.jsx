@@ -16,19 +16,19 @@ const Navbar = () => {
     <>
       <div className='py-1.5 px-6 flex justify-end lg:justify-center mx-auto items-center text-black font-bold text-2xl'>
         <div className='hidden lg:flex gap-24'>
-          <button className='px-3 py-2 rounded-3xl hover:bg-white hover:text-black'>
+          <button className='px-3 py-2 hover:text-[#A7CB4F]'>
             <Link href="/">Home</Link>
           </button>
-          <button className='px-3 py-2 rounded-3xl hover:bg-white hover:text-black'>
+          <button className='px-3 py-2 hover:text-[#A7CB4F]'>
             <Link href="/">Service</Link>
           </button>
-          <button className='px-3 py-2 rounded-3xl hover:bg-white hover:text-black'>
+          <button className='px-3 py-2 hover:text-[#A7CB4F]'>
             <Link href="/">Join Us</Link>
           </button>
-          <button className='px-3 py-2 rounded-3xl hover:bg-white hover:text-black'>
+          <button className='px-3 py-2 hover:text-[#A7CB4F]'>
             <Link href="/">Contacts</Link>
           </button>
-          <button className='px-3 py-2 rounded-3xl hover:bg-white hover:text-black'>
+          <button className='px-3 py-2 hover:text-[#A7CB4F]'>
             <Link href="/">About Us</Link>
           </button>
         </div>
