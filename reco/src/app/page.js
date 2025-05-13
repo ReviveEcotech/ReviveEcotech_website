@@ -1,12 +1,11 @@
 import Hero from "./_components/hero";
-import BePartOfRevive from "./_components/be-partof-revive";
-import Footer from "./_components/footer";
 import HowItWorks from "./_components/how-it-works";
 import OurApp from "./_components/our-app";
 import OurImpact from "./_components/our-impact";
 import WhatPeopleSay from "./_components/what-people-say";
 import WhoWeServe from "./_components/who-we-serve";
 import WhyChoose from "./_components/why-choose";
+import Questions from "./_components/questions";
 
 export default function Home() {
   return (
@@ -17,9 +16,8 @@ export default function Home() {
       <OurImpact/>
       <WhatPeopleSay/>
       <WhoWeServe/>
+      <Questions/>
       <OurApp/>
-      <BePartOfRevive/>
-      <Footer/>
     </div>
   );
 }

@@ -1,76 +1,76 @@
+
 import React from 'react';
-import { Apple, PlayCircle } from 'lucide-react';
+import apple from '../../images/apple.png';
+import google from '../../images/google.png';
+import qrcode from '../../images/qrcode.png';
+import Image from 'next/image';
 
 const AppPreview = () => {
   return (
-    <section id="app-preview" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-green-800 mb-12 relative">
-          Our App
-          <span className="block w-20 h-1 bg-yellow-500 mx-auto mt-4"></span>
+    <div className='py-5 md:py-10'>
+      <div className="mt-2 md:mt-12 bg-white rounded-3xl mx-4 lg:mx-20 py-5 md:py-7 px-3 md:px-10">
+        <h2 className="text-3xl md:text-[2.5rem] text-center font-bold mb-2 relative">
+          Download
+          <span>
+            <span className="text-3xl md:text-[2.5rem] text-[#a7cb4f]"> Our App</span>
+          </span>
         </h2>
-        
-        <div className="flex flex-wrap items-center gap-12 mt-12">
-          <div className="flex-1 min-w-[300px]">
-            <h3 className="text-2xl font-semibold mb-4 text-green-800">Everything You Need in One Place</h3>
-            <p className="mb-4">Our mobile app makes recycling effortless and rewarding. With just a few taps, you can:</p>
-            
-            <ul className="list-disc pl-5 mb-6">
-              <li className="mb-2">Schedule waste pickup at your convenience</li>
-              <li className="mb-2">Track your recycling history and impact</li>
-              <li className="mb-2">Redeem rewards and referral bonuses</li>
-              <li className="mb-2">Get real-time updates on collection status</li>
-              <li className="mb-2">Learn about proper waste segregation</li>
-            </ul>
-            
-            <div className="flex flex-wrap gap-4 mt-8">
-              <a href="#" className="flex items-center bg-black text-white px-5 py-3 rounded-lg transition duration-300 hover:-translate-y-1">
-                <Apple size={24} className="mr-3" />
-                <div>
-                  <div className="text-xs">Download on the</div>
-                  <div className="font-semibold">App Store</div>
-                </div>
-              </a>
-              
-              <a href="#" className="flex items-center bg-blue-600 text-white px-5 py-3 rounded-lg transition duration-300 hover:-translate-y-1">
-                <PlayCircle size={24} className="mr-3" />
-                <div>
-                  <div className="text-xs">Get it on</div>
-                  <div className="font-semibold">Google Play</div>
-                </div>
-              </a>
+        <div className='flex flex-col lg:flex-row py-5 md:py-14 gap-10 px-7'>
+          <div className='flex flex-col gap-6 items-center justify-center'>
+            <div>
+              <Image
+                src={qrcode}
+                alt='icon'
+                width={214}
+                height={214}
+                className="object-contain"
+                priority
+              />
             </div>
-            
-            <div className="mt-8 text-center">
-              <p className="mb-2">Scan to download</p>
-              <img 
-                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://revives.in/download" 
-                alt="QR Code" 
-                className="inline-block w-32 h-32 border-4 border-white shadow-md"
+            <div className='flex sm:flex-row gap-4'>
+              <Image
+                src={apple}
+                alt='icon'
+                width={205}
+                height={61}
+                className="object-contain"
+                priority
+              />
+              <Image
+                src={google}
+                alt='icon'
+                width={189}
+                height={60}
+                className="object-contain"
+                priority
               />
             </div>
           </div>
-          
-          <div className="flex-1 min-w-[300px] flex justify-center relative">
-            <img 
-              src="https://via.placeholder.com/300x600/4CAF50/FFFFFF?text=Upload" 
-              alt="App Screen 1" 
-              className="w-48 h-auto rounded-3xl shadow-xl transform -rotate-12 z-10"
-            />
-            <img 
-              src="https://via.placeholder.com/300x600/2E7D32/FFFFFF?text=Track" 
-              alt="App Screen 2" 
-              className="w-48 h-auto rounded-3xl shadow-xl absolute transform -translate-x-12 rotate-3"
-            />
-            <img 
-              src="https://via.placeholder.com/300x600/FBC02D/2E7D32?text=Rewards" 
-              alt="App Screen 3" 
-              className="w-48 h-auto rounded-3xl shadow-xl absolute transform -translate-x-24 rotate-12"
-            />
+          <div className='flex flex-col gap-5 items-center justify-center px-2 md:px-8'>
+            <p className='text-2xl md:text-3xl font-bold'>Everything You Need in One Place</p>
+            <p className='text-xl md:text-2xl font-light'>Our mobile app makes recycling effortless and rewarding.
+              With just a few taps, you can:</p>
+            <ul className='text-xl md:text-2xl font-light list-disc'>
+              <li>Schedule waste pickup at your convenience</li>
+              <li>Track your recycling history and impact</li>
+              <li>Redeem rewards and referral bonuses</li>
+              <li>Get real-time updates on collection status</li>
+              <li>Learn about proper waste segregation</li>
+            </ul>
           </div>
+
         </div>
+        <div className='flex flex-col gap-8 items-center justify-center text-base md:text-2xl font-light px-7 mt-12'>
+          <p>Subscribe to get updates on our initiatives and recycling tips.</p>
+          <div className='flex flex-col gap-3 w-full'>
+            <button className='bg-[#A7CB4F] rounded-4xl py-3'>Enter Your Email</button>
+            <button className='bg-[#E6F7BC] rounded-4xl py-3'>Share Response</button>
+          </div>
+          <p className='font-normal'>© 2025 Revives. All Rights Reserved.</p>
+        </div>
+
       </div>
-    </section>
+    </div>
   );
 };
 
