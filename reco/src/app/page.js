@@ -10,7 +10,7 @@ import Navbar from "./_components/navbar";
 
 export default function Home() {
   return (
-    <div className="bg-[#023d5b] py-9">
+    <div className="bg-[#023d5b] py-5 lg:py-9">
       <div className="bg-[#EDEDED] md:px-5 pb-16 pt-6 mx-4 md:mx-10 rounded-t-3xl">
         <Navbar />
         <Hero />
