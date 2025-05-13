@@ -54,9 +54,11 @@ const Questions = () => {
     return (
         <>
             <div className='my-2 md:my-4 bg-white rounded-3xl mx-4 lg:mx-20 py-5 md:py-14 px-3 md:px-10'>
-                <div className='text-2xl md:text-[2.5rem] font-bold flex justify-center mb-8'>
-                    Frequently Asked Questions
-                    <span className="block w-64 h-1 bg-[#a7cb4f] mx-auto mt-3 absolute top-[3.5rem]"></span>
+                <div className='flex flex-col items-center'>
+                    <p className='text-2xl md:text-[2.5rem] font-bold flex justify-center mb-3'>
+                        Frequently Asked Questions
+                    </p>
+                    <span className="w-64 h-1 bg-[#a7cb4f] mx-auto mb-9"></span>
                 </div>
 
                 <div className="sm:mx-8 md:mx-24">

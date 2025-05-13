@@ -12,11 +12,12 @@ const Feature = ({ icon, title, description }) => {
 
 const WhyChooseUs = () => {
   return (
-    <section id="why-choose-us" className="py-20 bg-[#013C5A] mt-24 mx-12">
+    <section id="why-choose-us" className="py-20 bg-[#013C5A] mx-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-[40px] font-bold text-center text-[#A7CB4F] mb-12 relative">
-          Why Choose Revive
-          <span className="block w-44 h-1 bg-[#A7CB4F] mx-auto mt-3"></span>
+        <h2 className="text-[40px] font-bold text-center text-white mb-12 relative">
+          Why Choose 
+          <span className="text-[#a7cb4f]"> Revive</span>
+          <span className="block w-60 h-1 bg-[#A7CB4F] mx-auto mt-3"></span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mt-12">

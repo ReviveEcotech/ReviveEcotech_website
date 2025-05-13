@@ -9,7 +9,7 @@ const AppPreview = () => {
   return (
     <div className='py-5 md:py-10'>
       <div className="mt-2 md:mt-12 bg-white rounded-3xl mx-4 lg:mx-20 py-5 md:py-7 px-3 md:px-10">
-        <h2 className="text-3xl md:text-[2.5rem] text-center font-bold mb-2 relative">
+        <h2 className="text-3xl md:text-[2.5rem] text-center font-bold mb-6 md:mb-2 relative">
           Download
           <span>
             <span className="text-3xl md:text-[2.5rem] text-[#a7cb4f]"> Our App</span>

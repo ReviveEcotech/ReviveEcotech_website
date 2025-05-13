@@ -74,9 +74,7 @@ const ImpactCounter = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-white mb-2">
           Our
-          <span>
-            <span className="text-[#a7cb4f]"> Impact</span>
-          </span>
+          <span className="text-[#a7cb4f]"> Impact</span>
           <span className="block w-52 h-1 bg-[#a7cb4f] mx-auto mt-3"></span>
         </h2>
 
