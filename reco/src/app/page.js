@@ -1,64 +1,103 @@
-import Hero from "./_components/hero";
-import HowItWorks from "./_components/how-it-works";
-import OurApp from "./_components/our-app";
-import OurImpact from "./_components/our-impact";
-import WhatPeopleSay from "./_components/what-people-say";
-import WhoWeServe from "./_components/who-we-serve";
-import WhyChoose from "./_components/why-choose";
-import Questions from "./_components/questions";
-import Navbar from "./_components/navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-[#023d5b] py-5 lg:py-9 relative overflow-hidden">
-      {/* Main container ellipse effects */}
-      <div className="absolute -left-64 top-1/3 w-[500px] h-[500px] rounded-full bg-gradient-to-r from-[#a7cb4f]/60 to-[#84a82d]/40 blur-3xl pointer-events-none"></div>
-      <div className="absolute -right-10 top-2 w-[300px] h-[300px] rounded-full bg-gradient-to-r from-[#A7CB4F]/50 to-[#B1FFFF]/30 blur-3xl pointer-events-none"></div>
-      <div className="bg-[#EDEDED] md:px-5 pb-16 pt-6 mx-4 md:mx-10 rounded-t-3xl relative z-10">
-        {/* Hero section ellipses */}
-        <div className="absolute -left-40 top-20 w-[300px] h-[300px] rounded-full bg-gradient-to-r from-[#a7cb4f]/50 to-[#84a82d]/30 blur-3xl pointer-events-none"></div>
-        <Navbar />
-        <Hero />
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <Image
+          className="dark:invert"
+          src="/next.svg"
+          alt="Next.js logo"
+          width={180}
+          height={38}
+          priority
+        />
+        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <li className="mb-2 tracking-[-.01em]">
+            Get started by editing{" "}
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
+              src/app/page.js
+            </code>
+            .
+          </li>
+          <li className="tracking-[-.01em]">
+            Save and see your changes instantly.
+          </li>
+        </ol>
 
-        {/* How It Works section ellipses */}
-        <div className="absolute -right-40 top-[40%] w-[350px] h-[350px] rounded-full bg-gradient-to-l from-[#a7cb4f]/45 to-[#84a82d]/25 blur-3xl pointer-events-none"></div>
-        <HowItWorks />
-      </div>
-
-      {/* Why Choose section ellipses */}
-      <div className="relative overflow-hidden">
-        <div className="absolute -left-52 top-20 w-[400px] h-[400px] rounded-full bg-gradient-to-r from-[#a7cb4f]/55 to-[#84a82d]/35 blur-3xl pointer-events-none"></div>
-        <WhyChoose />
-      </div>
-
-      {/* Our Impact section ellipses */}
-      <div className="relative overflow-hidden">
-        <div className="absolute -left-48 bottom-20 w-[350px] h-[350px] rounded-full bg-gradient-to-r from-[#a7cb4f]/55 to-[#84a82d]/35 blur-3xl pointer-events-none"></div>
-        <OurImpact />
-      </div>
-
-      {/* What People Say section ellipses */}
-      <div className="relative overflow-hidden">
-        <div className="absolute -left-60 top-1/4 w-[400px] h-[400px] rounded-full bg-gradient-to-r from-[#a7cb4f]/50 to-[#84a82d]/30 blur-3xl pointer-events-none"></div>
-        <WhatPeopleSay />
-      </div>
-
-      {/* Who We Serve section ellipses */}
-      <div className="relative overflow-hidden">
-        <div className="absolute -right-40 top-20 w-[380px] h-[380px] rounded-full bg-gradient-to-l from-[#a7cb4f]/55 to-[#84a82d]/35 blur-3xl pointer-events-none"></div>
-        <WhoWeServe />
-      </div>
-
-      {/* Questions section ellipses */}
-      <div className="relative overflow-hidden">
-        <div className="absolute -left-52 top-1/3 w-[420px] h-[420px] rounded-full bg-gradient-to-r from-[#a7cb4f]/45 to-[#84a82d]/25 blur-3xl pointer-events-none"></div>
-        <Questions />
-      </div>
-
-      {/* Our App section ellipses */}
-      <div className="relative overflow-hidden">
-        <OurApp />
-      </div>
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <a
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              className="dark:invert"
+              src="/vercel.svg"
+              alt="Vercel logomark"
+              width={20}
+              height={20}
+            />
+            Deploy now
+          </a>
+          <a
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read our docs
+          </a>
+        </div>
+      </main>
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/file.svg"
+            alt="File icon"
+            width={16}
+            height={16}
+          />
+          Learn
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/window.svg"
+            alt="Window icon"
+            width={16}
+            height={16}
+          />
+          Examples
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/globe.svg"
+            alt="Globe icon"
+            width={16}
+            height={16}
+          />
+          Go to nextjs.org →
+        </a>
+      </footer>
     </div>
   );
 }
