@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link href="/">Join Us</Link>
           </button>
           <button className='px-3 py-2 hover:text-[#A7CB4F]'>
-            <Link href="/">Contacts</Link>
+            <Link href="/contact">Contacts</Link>
           </button>
           <button className='px-3 py-2 hover:text-[#A7CB4F]'>
             <Link href="/">About Us</Link>
