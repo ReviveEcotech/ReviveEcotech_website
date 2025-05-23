@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
-import { Trash2, DollarSign, Users, Cloud } from 'lucide-react';
+// import { Trash2, DollarSign, Users, Cloud } from 'lucide-react';
 import Image from 'next/image';
 import recycle from '../../images/recycle_logo.png';
 import rewards from '../../images/rewards_logo.png';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Leaf, ThumbsUp, Gift, Award, RefreshCw } from 'lucide-react';
+// import { Leaf, ThumbsUp, Gift, Award, RefreshCw } from 'lucide-react';
 
 const Feature = ({ icon, title, description }) => {
   return (
