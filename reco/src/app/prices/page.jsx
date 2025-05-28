@@ -1,6 +1,7 @@
 import React from 'react'
 import Prices_header from '../components/prices/prices_header'
 import Prices_ml_Section from '../components/prices/prices_ml_Section'
+import Service from '../components/prices/service'
 
 const Prices = () => {
   return (
@@ -10,6 +11,7 @@ const Prices = () => {
       </h1>
       <Prices_header />
       <Prices_ml_Section />
+      <Service/>
     </main>
   )
 }
