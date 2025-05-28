@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import scrap from "../../../public/prices/scrap.svg"
+import scrap from "../../../../public/prices/scrap.svg"
 
 const Prices_ml_Section = () => {
   return (
