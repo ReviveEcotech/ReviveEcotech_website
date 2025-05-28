@@ -1,6 +1,6 @@
 import React from 'react'
-import Prices_header from '../components/prices_header'
-import Prices_ml_Section from '../components/prices_ml_Section'
+import Prices_header from '../components/prices/prices_header'
+import Prices_ml_Section from '../components/prices/prices_ml_Section'
 
 const Prices = () => {
   return (
