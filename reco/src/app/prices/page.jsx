@@ -12,6 +12,7 @@ const Prices = () => {
       <Prices_header />
       <Prices_ml_Section />
       <Service/>
+      <Prices_ml_Section />
     </main>
   )
 }
