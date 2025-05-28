@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+:root{
+    --price_header_bg: #8F8F8F;
+    --price_header_heading: #013C5A;
+}

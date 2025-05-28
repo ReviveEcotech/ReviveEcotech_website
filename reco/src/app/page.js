@@ -1,12 +1,12 @@
-import Hero from "./_components/hero";
-import HowItWorks from "./_components/how-it-works";
-import OurApp from "./_components/our-app";
-import OurImpact from "./_components/our-impact";
-import WhatPeopleSay from "./_components/what-people-say";
-import WhoWeServe from "./_components/who-we-serve";
-import WhyChoose from "./_components/why-choose";
-import Questions from "./_components/questions";
-import Navbar from "./_components/navbar";
+import Hero from "./components/hero";
+import HowItWorks from "./components/how-it-works";
+import OurApp from "./components/our-app";
+import OurImpact from "./components/our-impact";
+import WhatPeopleSay from "./components/what-people-say";
+import WhoWeServe from "./components/who-we-serve";
+import WhyChoose from "./components/why-choose";
+import Questions from "./components/questions";
+import Navbar from "./components/navbar";
 
 export default function Home() {
   return (
