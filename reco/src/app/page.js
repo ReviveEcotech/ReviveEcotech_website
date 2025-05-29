@@ -11,14 +11,16 @@ import Footer from "@/components/footer";
 import Hero from "@/components/landingpage/hero";
 import Questions from "@/components/landingpage/questions";
 import Image from "next/image";
+import ReviveHelps from "@/components/landingpage/revive-helps";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
         <div className="bgimage">
           <Navbar />
           <Hero />
         </div>
+        <ReviveHelps/>
       <Questions />
       <OurApp />
       <Footer />

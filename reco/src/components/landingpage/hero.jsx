@@ -12,7 +12,7 @@ const Hero = () => {
         {/* Hero content container: centered, max-width, and specific text color for children */}
         <div className="w-full  text-[#013C5A]"> {/* Default text color for this section */}
           {/* Main Heading: Changed <p> to <h1> for semantics */}
-          <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 fontcolorgradient leading-tight">
+          <div className="mb-6 fontcolorgradient leading-tight">
             Turn Your Waste into Worth
           </div>
           {/* Subheading */}
