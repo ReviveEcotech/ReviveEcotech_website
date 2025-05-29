@@ -2,8 +2,31 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
 }
+.gradient-text {
+  background: 
+  linear-gradient(
+                    to right,
+                    #1e40af,  /* Blue */
+                    #059669,  /* Green */
+                    #65a30d   /* Lime green */
+                 );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    font-weight: bold;
+
+}
+.common-image {
+  width: var(--img-width);
+  height: var(--img-height);
+  border-radius: var(--img-radius);
+  box-shadow: var(--img-shadow);
+  object-fit: cover;
+}
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -14,7 +37,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fffff;
     --foreground: #ededed;
   }
 }
