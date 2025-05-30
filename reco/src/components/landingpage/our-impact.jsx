@@ -1,111 +1,84 @@
-"use client"
-import React, { useState, useEffect, useRef } from 'react';
-import { Trash2, DollarSign, Users, Cloud } from 'lucide-react';
-import Image from 'next/image';
-import recycle from '../../images/recycle_logo.png';
-import rewards from '../../images/rewards_logo.png';
-import saved from '../../images/saved_logo.png';
-import users from '../../images/users09 logo.png';
+import Image from 'next/image'
+import React from 'react'
 
-
-const CounterItem = ({ icon, endValue, label }) => {
-  const [count, setCount] = useState(0);
-  const counterRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          let startValue = 0;
-          const increment = Math.ceil(endValue / 60); // Adjust for animation speed
-
-          const timer = setInterval(() => {
-            startValue += increment;
-
-            if (startValue > endValue) {
-              setCount(endValue);
-              clearInterval(timer);
-            } else {
-              setCount(startValue);
-            }
-          }, 30);
-
-          // Clean up
-          return () => clearInterval(timer);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (counterRef.current) {
-      observer.observe(counterRef.current);
-    }
-
-    return () => {
-      if (counterRef.current) {
-        observer.unobserve(counterRef.current);
-      }
-    };
-  }, [endValue]);
-
+const ourimpact = () => {
   return (
-    <div ref={counterRef} className="font-bold text-3xl mx-5 mb-5 min-w-[200px] text-[#013C5A] flex flex-col items-center justify-between">
-      <div className=" text-yellow-500 mb-6 flex justify-center ">
-        <Image
-          src={icon}
-          alt='icon'
-          width={100}
-          height={100}
-          className="object-contain"
-          priority
-        />
-      </div>
-      <div>
-        <div>{count}</div>
-        <div>{label}</div>
-      </div>
-    </div>
-  );
-};
+    <div className='my-32'>
+      <div className='w-full flex flex-col justify-center tester'>
 
-const ImpactCounter = () => {
-  return (
-    <section className="py-20 text-white text-center">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white mb-2">
-          Our
-          <span className="text-[#a7cb4f]"> Impact</span>
-          <span className="block w-52 h-1 bg-[#a7cb4f] mx-auto mt-3"></span>
-        </h2>
+        <div className='fontcolorgradient mb-7 tester'>
+          Our Impact
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mt-12 py-9 bg-[#d9d9d9] rounded-3xl shadow-sm items-baseline lg:mx-11">
-          <CounterItem
-            icon={recycle}
-            endValue={1250}
-            label="KGs of Waste Recycled"
-          />
-
-          <CounterItem
-            icon={rewards}
-            endValue={850}
-            label="Rewards Distributed"
-          />
-
-          <CounterItem
-            icon={users}
-            endValue={3200}
-            label="Happy Users"
-          />
-
-          <CounterItem
-            icon={saved}
-            endValue={450}
-            label="Estimated CO2 Saved (kg)"
-          />
+        <div className='flex flex-row tester'>
+          <p className='text-black mr-3'>
+            Work recently submitted by our top creators on the platform.
+          </p>
+          <button>
+            <Image
+              src="/landingpage/left.svg"
+              height={50}
+              width={50}
+              alt='Left Arrow'
+              className='mr-2'
+            />
+          </button>
+          <button>
+            <Image
+              src="/landingpage/right.svg"
+              height={50}
+              width={50}
+              alt='Right Arrow'
+            />
+          </button>
         </div>
       </div>
-    </section>
-  );
-};
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-8 lg:px-16 text-black'>
+        <div className='bg-[#ffffff] ring-[1.5rem] ring-[#b9b9b9] rounded-3xl p-2 tester'>
+          <Image
+            src="/landingpage/trophy.svg"
+            alt='Impact Image 1'
+            width={300}
+            height={300}
+            className='w-full h-auto mb-4 tester'
+          />
+          <p className='text-2xl font-bold text-[#01185b] tester'>850 Rewards Distributed</p>
+        </div>
 
-export default ImpactCounter;
+        <div className='bg-[#ffffff] ring-[1.5rem] ring-[#b9b9b9] rounded-3xl p-6'>
+          <Image
+            src="/landingpage/recycle.svg"
+            alt='Impact Image 2'
+            width={300}
+            height={300}
+            className='w-full h-auto mb-4'
+          />
+          <p className='text-2xl font-bold text-[#01185b]'>1250 KGs of Waste Recycled</p>
+        </div>
+
+        <div className='bg-[#ffffff] ring-[1.5rem] ring-[#b9b9b9] rounded-3xl p-6'>
+          <Image
+            src="/landingpage/user.svg"
+            alt='Impact Image 3'
+            width={300}
+            height={300}
+            className='w-full h-auto mb-4'
+          />
+          <p className='text-2xl font-bold text-[#01185b]'>3200 Happy Users</p>
+        </div>
+        <div className='bg-[#ffffff] ring-[1.5rem] ring-[#b9b9b9] rounded-3xl p-6'>
+          <Image
+            src="/landingpage/co2.svg"
+            alt='Impact Image 4'
+            width={300}
+            height={300}
+            className='w-full h-auto mb-4'
+          />
+          <p className='text-2xl font-bold text-[#01185b]'>450 Estimated CO2 Saved (kg)</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default ourimpact

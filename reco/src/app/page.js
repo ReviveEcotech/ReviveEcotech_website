@@ -1,10 +1,10 @@
 // import Hero from "@/components/landingpage/hero";
 // import HowItWorks from "@/components/landingpage/how-it-works";
-// import OurImpact from "@/components/landingpage/our-impact";
-// import WhatPeopleSay from "@/components/landingpage/what-people-say";
+import OurImpact from "@/components/landingpage/our-impact";
+import Whatpeoplesay from "@/components/landingpage/what-people-say";
 // import WhoWeServe from "@/components/landingpage/who-we-serve";
-// import WhyChoose from "@/components/landingpage/why-choose";
 // import Questions from "@/components/landingpage/questions";
+import WhyChoose from "@/components/landingpage/why-choose";
 import OurApp from "@/components/landingpage/our-app";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -13,6 +13,7 @@ import Questions from "@/components/landingpage/questions";
 import ReviveHelps from "@/components/landingpage/revive-helps";
 import Brands from "@/components/landingpage/brands";
 import HowItWorks from "@/components/landingpage/how-it-works";
+import WhyChooseUs from "@/components/landingpage/why-choose";
 
 export default function Home() {
   return (
@@ -22,8 +23,13 @@ export default function Home() {
         <Hero />
       </div>
       <ReviveHelps />
-      <Brands/>
-      <HowItWorks/>
+      <Brands />
+      <HowItWorks />
+      <WhyChoose />
+      <div className="bg-[#e8e8e8] mx-8 rounded-4xl">
+        <OurImpact />
+        <Whatpeoplesay/>
+      </div>
       <Questions />
       <OurApp />
       <Footer />

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Leaf, ThumbsUp, Gift, Award, RefreshCw } from 'lucide-react';
 
 const Feature = ({ icon, title, description }) => {
   return (
@@ -12,19 +11,12 @@ const Feature = ({ icon, title, description }) => {
 
 const WhyChooseUs = () => {
   return (
-    <section id="why-choose-us" className="py-20 bg-[#013C5A] mx-12">
-      <div className="container mx-auto px-4">
-        <h2 className="text-[40px] font-bold text-center text-white mb-12 relative">
-          Why Choose 
-          <span className="text-[#a7cb4f]"> Revive</span>
-          <span className="block w-60 h-1 bg-[#A7CB4F] mx-auto mt-3"></span>
-        </h2>
+      <div className="my-32">
+        <div className="fontcolorgradient text-center">
+          Why Choose Revives
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mt-12">
-          <Feature 
-            title="Eco-Friendly Mission" 
-            description="We're committed to reducing waste and creating a sustainable future for all."
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-12">
           
           <Feature 
             title="Easy-to-Use App" 
@@ -43,7 +35,6 @@ const WhyChooseUs = () => {
 
         </div>
       </div>
-    </section>
   );
 };
 
