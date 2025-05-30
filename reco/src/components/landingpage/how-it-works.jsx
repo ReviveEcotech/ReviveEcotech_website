@@ -1,64 +1,47 @@
-"use client"
-import React from 'react';
-import Image from 'next/image';
-import buildingImage from '../../images/building.png';
-import deviceLogoImage from '../../images/device_logo.png';
-import recycleLogoImage from '../../images/recycle_logo.png';
-
-const Step = ({ imageUrl, title, description }) => {
-  return (
-    <div className="w-full lg:w-1/3 md:w-1/2 p-4 pb-14 flex flex-col items-center mb-8 text-center rounded-3xl border border-black bg-gradient-to-b from-[#ebebe9] to-[#d4dfad] transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
-      <h3 className="w-full px-1.5 py-2 rounded-xl text-xl lg:text-2xl font-bold mb-6 text-[#013C5A] bg-[#A7CB4F]">
-        {title}
-      </h3>
-      <div className="mb-5 w-24 h-24 lg:w-32 lg:h-32 relative flex items-center justify-center">
-        <Image
-          src={imageUrl} 
-          alt={title}
-          width={100}
-          height={100}
-          className="object-contain"
-          priority
-        />
-      </div>
-      <p className='text-lg lg:text-2xl font-light max-w-sm'>
-        {description}
-      </p>
-    </div>
-  );
-};
+import Image from 'next/image'
+import React from 'react'
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="mt-8 lg:mt-11 px-4">
-      <div className="container mx-auto ">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center text-black mb-6 lg:mb-8 relative">
-          How it Works
-          <span className="block w-40 lg:w-64 h-1 bg-[#a7cb4f] mx-auto mt-3"></span>
-        </h2>
+    <div>
+      <div className='text-black text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-24 mb-14'>
+        How It <span className='fontcolorgradient'>Works!</span>
+      </div>
+      <div className='text-black px-7 sm:px-14 md:px-24 lg:px-44 text-2xl space-y-14 sm:space-y-12 md:space-y-12 xl:space-y-1'>
 
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-14 py-8 lg:py-10 px-5 lg:px-20 mt-6 lg:mt-9 items-center rounded-2xl bg-[#013c5a]">
-          <Step
-            imageUrl={deviceLogoImage} 
-            title="How It Works"
-            description="Use our simple app to list the recyclable waste you have for collection."
+        <div className='flex flex-row justify-end items-center gap-4 md:gap-8'>
+          <p className='text-base md:text-2xl'>Use our<span className='font-bold'> simple app</span>  to list your recyclable waste you have for collection</p>
+          <Image
+            src="/landingpage/egg1.svg"
+            alt='How It Works Illustration'
+            width={300}
+            height={300}
+            className='hidden sm:flex sm:w-1/4 xl:w-1/2'
           />
-
-          <Step
-            imageUrl={recycleLogoImage}
-            title="We Collect & Sort"
-            description="Our team collects, verifies, and sorts the materials to ensure quality standards."
+        </div>
+        <div className='flex flex-row justify-start items-center gap-4 md:gap-8'>
+          <Image
+            src="/landingpage/egg2.svg"
+            alt='How It Works Illustration'
+            width={450}
+            height={450}
+            className='hidden sm:flex sm:w-1/3 xl:w-1/2'
           />
-
-          <Step
-            imageUrl={buildingImage}
-            title="Industries Reuse"
-            description="Manufacturers get high-quality recycled materials to create new products."
+          <p className='text-base md:text-2xl'>Our <span className='font-bold'>team collects</span>, verifies, and sorts the materials to ensure quality standards.</p>
+        </div>
+        <div className='flex flex-row justify-end items-center gap-4 md:gap-8 '>
+          <p className='text-base md:text-2xl'>Manufacturers get <span className='font-bold'>high-quality</span> recycled materials to create new products.</p>
+          <Image
+            src="/landingpage/egg3.svg"
+            alt='How It Works Illustration'
+            width={70}
+            height={70}
+            className='hidden sm:flex sm:w-1/6 xl:w-1/5'
           />
         </div>
       </div>
-    </section>
-  );
-};
+    </div>
+  )
+}
 
-export default HowItWorks;
+export default HowItWorks

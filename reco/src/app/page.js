@@ -12,16 +12,18 @@ import Hero from "@/components/landingpage/hero";
 import Questions from "@/components/landingpage/questions";
 import ReviveHelps from "@/components/landingpage/revive-helps";
 import Brands from "@/components/landingpage/brands";
+import HowItWorks from "@/components/landingpage/how-it-works";
 
 export default function Home() {
   return (
-    <div className="bg-white ">
-      <div className="bgimage">
+    <div className="overflow-x-hidden bg-white">
+      <div className="bgimage ">
         <Navbar />
         <Hero />
       </div>
       <ReviveHelps />
       <Brands/>
+      <HowItWorks/>
       <Questions />
       <OurApp />
       <Footer />
