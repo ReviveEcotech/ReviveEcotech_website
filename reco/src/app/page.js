@@ -26,7 +26,7 @@ export default function Home() {
       <Brands />
       <HowItWorks />
       <WhyChoose />
-      <div className="bg-[#e8e8e8] mx-8 rounded-4xl">
+      <div className="bg-[#e8e8e8] m-8 p-1 rounded-3xl">
         <OurImpact />
         <Whatpeoplesay/>
       </div>

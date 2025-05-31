@@ -42,3 +42,7 @@ body {
 .tester{
   @apply border border-black
 }
+
+.scaler{
+  @apply scale-100 hover:scale-110 transition-all duration-300 ease-in-out
+}
