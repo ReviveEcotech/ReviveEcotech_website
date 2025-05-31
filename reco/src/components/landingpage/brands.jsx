@@ -3,7 +3,7 @@ import React from 'react'
 
 const Brands = () => {
     return (
-        <div className="my-12 mx-4 md:mx-8 lg:mx-12">
+        <div className="my-12 mx-2 md:mx-8 lg:mx-12">
             <div className='fontcolorgradient text-3xl font-bold text-center mb-6'>
                 Collaborated Brands
             </div>

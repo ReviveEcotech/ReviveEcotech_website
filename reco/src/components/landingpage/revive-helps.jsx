@@ -4,7 +4,7 @@ import React from 'react'
 
 const ReviveHelps = () => {
     return (
-        <div className="py-8 px-6 md:px-12 lg:px-16 bg-[#e3e3e1] rounded-3xl mx-4 md:mx-8 lg:mx-12 my-8">
+        <div className="py-8 px-6 md:px-12 lg:px-16 bg-[#e3e3e1] rounded-3xl mx-2 md:mx-8 lg:mx-12 my-8">
             <div className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-11 lg:mb-6 fontcolorgradient text-center">
                 Revive Helps
             </div>

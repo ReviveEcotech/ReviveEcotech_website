@@ -6,12 +6,12 @@ const ourimpact = () => {
     <div className='mb-40'>
       <div className='flex flex-col items-end  lg:pr-40'>  {/* Added items-end to align to right */}
 
-        <div className='fontcolorgradient my-3 sm:my-7 mx-4 text-right '>  {/* Added text-right */}
+        <div className='fontcolorgradient my-3 sm:my-7 mx-4 text-end '>  {/* Added text-right */}
           Our Impact
         </div>
 
         <div className='flex flex-row justify-end items-center'>  {/* Added justify-end */}
-          <p className='text-black mx-1'>
+          <p className='text-black sm:my-7 mx-4 text-end'>
             Work recently submitted by our top creators on the platform
           </p>
           <button>
@@ -20,7 +20,7 @@ const ourimpact = () => {
               height={50}
               width={50}
               alt='Left Arrow'
-              className='mr-4'
+              className='mr-4 hidden lg:block'
             />
           </button>
           <button>
@@ -29,7 +29,7 @@ const ourimpact = () => {
               height={50}
               width={50}
               alt='Right Arrow'
-              className='mr-4'
+              className='mr-4 hidden lg:block'
             />
           </button>
         </div>
