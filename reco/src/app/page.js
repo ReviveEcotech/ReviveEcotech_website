@@ -1,9 +1,5 @@
-// import Hero from "@/components/landingpage/hero";
-// import HowItWorks from "@/components/landingpage/how-it-works";
 import OurImpact from "@/components/landingpage/our-impact";
 import Whatpeoplesay from "@/components/landingpage/what-people-say";
-// import WhoWeServe from "@/components/landingpage/who-we-serve";
-// import Questions from "@/components/landingpage/questions";
 import WhyChoose from "@/components/landingpage/why-choose";
 import OurApp from "@/components/landingpage/our-app";
 import Navbar from "@/components/navbar";
@@ -13,7 +9,6 @@ import Questions from "@/components/landingpage/questions";
 import ReviveHelps from "@/components/landingpage/revive-helps";
 import Brands from "@/components/landingpage/brands";
 import HowItWorks from "@/components/landingpage/how-it-works";
-import WhyChooseUs from "@/components/landingpage/why-choose";
 import Liner from "@/components/landingpage/liner";
 
 export default function Home() {
