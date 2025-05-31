@@ -12,7 +12,7 @@ const AppPreview = () => {
             <span className="text-3xl md:text-[2.5rem] text-[#a7cb4f]"> Our App</span>
           </span>
         </h2>
-        <div className='flex flex-col lg:flex-row py-5 md:py-14 gap-10 px-7'>
+        <div className='flex flex-col xl:flex-row py-5 md:py-14 gap-10 px-4'>
           <div className='flex flex-col gap-6 items-center justify-center'>
             <div>
               <Image
@@ -24,13 +24,13 @@ const AppPreview = () => {
                 priority
               />
             </div>
-            <div className='flex sm:flex-row gap-4'>
+            <div className='flex sm:flex-row gap-4 justify-center items-center'>
               <Image
                 src="/landingpage/apple.svg"
                 alt='icon'
                 width={205}
                 height={61}
-                className="object-contain"
+                className="object-contain w-1/2 sm:w-full"
                 priority
               />
               <Image
@@ -38,12 +38,12 @@ const AppPreview = () => {
                 alt='icon'
                 width={189}
                 height={60}
-                className="object-contain"
+                className="object-contain w-1/2 sm:w-full"
                 priority
               />
             </div>
           </div>
-          <div className='flex flex-col gap-5 items-center justify-center px-2 md:px-8'>
+          <div className='flex flex-col gap-5 items-center justify-center px-2 md:px-6'>
             <p className='text-2xl md:text-3xl font-bold'>Everything You Need in One Place</p>
             <p className='text-xl md:text-2xl font-light'>Our mobile app makes recycling effortless and rewarding.
               With just a few taps, you can:</p>

@@ -3,7 +3,7 @@ import React from 'react'
 
 const ourimpact = () => {
   return (
-    <div className='mb-36'>
+    <div className='mb-40'>
       <div className='flex flex-col items-end  lg:pr-40'>  {/* Added items-end to align to right */}
 
         <div className='fontcolorgradient my-3 sm:my-7 mx-4 text-right '>  {/* Added text-right */}
