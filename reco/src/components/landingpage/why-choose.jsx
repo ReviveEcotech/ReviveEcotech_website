@@ -1,40 +1,61 @@
+import Image from 'next/image';
 import React from 'react';
-
-const Feature = ({ icon, title, description }) => {
-  return (
-    <div className="bg-[#D9D9D9] p-6 py-10 rounded-4xl text-center transition duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg shadow-[-8px_8px_4px_0px_rgba(167,203,79,0.7)]">
-      <h3 className="font-bold text-3xl mb-4 text-black">{title}</h3>
-      <p className='font-light text-2xl'>{description}</p>
-    </div>
-  );
-};
 
 const WhyChooseUs = () => {
   return (
-      <div className="my-32">
-        <div className="fontcolorgradient text-center">
-          Why Choose Revives
+    <div className="my-24"> {/* Further reduced from my-16 to my-8 */}
+      <div className="fontcolorgradient text-center mb-28 md:-mb-20"> {/* Added mb-8 to reduce space */}
+        Why Choose Revives
+      </div>
+      <div className='flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-20 xl:gap-28 px-10 md:px-8 lg:px-20 xl:px-36'>
+        <div className='relative mb-20 md:mb-0 flex flex-col gap-6 pb-14 pt-32 px-2 lg:px-12 items-center justify-center text-center text-white bg-[#013C5A] rounded-4xl'> {/* Reduced pt-32 to pt-24 */}
+          {/* Rest of the code remains the same */}
+          <div>
+            <Image
+              src="/landingpage/icon1.svg"
+              height={200}
+              width={200}
+              alt='Icon 1'
+              className='absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
+            />
+          </div>
+          <div className='text-[#FF326F] text-7xl'>1</div>
+          <div className='font-bold text-2xl'>Easy-to-Use App</div>
+          <div className='font-mono '>Our intuitive platform makes recycling accessible to everyone.</div>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-12">
-          
-          <Feature 
-            title="Easy-to-Use App" 
-            description="Our intuitive platform makes recycling accessible to everyone."
-          />
-          
-          <Feature 
-            title="Rewards & Referrals" 
-            description="Earn points, discounts, and bonuses for recycling and referring friends."
-          />
-          
-          <Feature 
-            title="Trusted by Industries" 
-            description="Leading manufacturers rely on our high-quality recycled materials."
-          />
-
+        {/* Similar changes for other boxes */}
+        <div className='relative mb-20 md:mb-0 md:mt-[10rem] flex flex-col gap-6 pb-14 pt-32 px-2 lg:px-12 items-center justify-center text-center text-black bg-[#A7CB4F] rounded-4xl'> {/* Changed pt-40 to pt-32 */}
+          {/* Second box content */}
+          <div>
+            <Image
+              src="/landingpage/icon2.svg"
+              height={200}
+              width={200}
+              alt='Icon 2'
+              className='absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
+            />
+          </div>
+          <div className='text-[#FF326F] text-7xl'>2</div>
+          <div className='font-bold text-2xl'>Rewards & Referrals</div>
+          <div className='font-mono'>Earn points, discounts, and bonuses for recycling and referring friends.</div>
+        </div>
+        <div className='relative mb-20 md:mb-0 md:mt-[25rem] flex flex-col gap-6 pb-14 pt-32 px-2 lg:px-12 items-center justify-center text-center text-white bg-[#013C5A] rounded-4xl'> {/* Changed pt-40 to pt-32 */}
+          {/* Third box content */}
+          <div>
+            <Image
+              src="/landingpage/icon3.svg"
+              height={200}
+              width={200}
+              alt='Icon 3'
+              className='absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
+            />
+          </div>
+          <div className='text-[#FF326F] text-7xl'>3</div>
+          <div className='font-bold text-2xl'>Trusted by Industries</div>
+          <div className='font-mono'>Leading manufacturers rely on our high-quality recycled materials..</div>
         </div>
       </div>
+    </div>
   );
 };
 

@@ -38,7 +38,7 @@ const Navbar = () => {
                 </ul>
 
                 {/* Mobile Hamburger Button */}
-                <div className="lg:hidden flex justify-end w-full border border-black">
+                <div className="lg:hidden flex justify-end w-full">
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="rounded-md hover:bg-[#A7CB4F] transition-colors"
