@@ -14,6 +14,7 @@ import ReviveHelps from "@/components/landingpage/revive-helps";
 import Brands from "@/components/landingpage/brands";
 import HowItWorks from "@/components/landingpage/how-it-works";
 import WhyChooseUs from "@/components/landingpage/why-choose";
+import Liner from "@/components/landingpage/liner";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Navbar />
         <Hero />
       </div>
+      <Liner/>
       <ReviveHelps />
       <Brands />
       <HowItWorks />
@@ -30,7 +32,7 @@ export default function Home() {
         <OurImpact />
         <Whatpeoplesay/>
       </div>
-      <Questions />
+      <Questions /> 
       <OurApp />
       <Footer />
     </div>
