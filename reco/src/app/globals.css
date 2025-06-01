@@ -34,10 +34,10 @@ body {
 }
 
 .greenbutton{
-  @apply cursor-pointer bg-[#A7CB4F] hover:bg-[#96b83e] shadow-md text-black font-mono text-base sm:text-lg py-3 px-8 rounded-2xl transition-all duration-300 flex items-center justify-center hover:scale-105 w-full sm:w-auto
+  @apply cursor-pointer bg-[#A7CB4F] hover:bg-[#96b83e] shadow-md text-black  text-sm sm:text-lg py-3 px-8 rounded-2xl transition-all duration-300 flex items-center justify-center hover:scale-105 
 }
 .bluebutton{
-  @apply cursor-pointer bg-[#013C5A] hover:bg-[#012c42] shadow-md text-white font-mono text-base sm:text-lg py-3 px-12 rounded-2xl transition-all duration-300 flex items-center justify-center hover:scale-105 w-full sm:w-auto
+  @apply cursor-pointer bg-[#013C5A] hover:bg-[#012c42] shadow-md text-white  text-sm sm:text-lg py-3 px-8 rounded-2xl transition-all duration-300 flex items-center justify-center hover:scale-105
 }
 .tester{
   @apply border border-black

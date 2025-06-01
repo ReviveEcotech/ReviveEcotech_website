@@ -13,14 +13,14 @@ const ReviveHelps = () => {
                     <p className='text-xl md:text-2xl mb-14'>
                         Revive helps you recycle your waste while offering the best exchange rates. We're committed to turning your scrap into value through reliable, high-quality recycling services.
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
-                        <Link href="/download" className='w-2/3 sm:w-auto'>
-                            <button className="greenbutton w-full sm:w-auto">
+                    <div className="flex flex-col sm:flex-row items-center gap-5">
+                        <Link href="/download">
+                            <button className="greenbutton tester w-[14rem] ">
                                 View Service
                             </button>
                         </Link>
-                        <Link href="/login" className='w-2/3 sm:w-auto'>
-                            <button className="bluebutton w-full sm:w-auto">
+                        <Link href="/login">
+                            <button className="bluebutton tester w-[14rem]">
                                 Exchange Scrap
                             </button>
                         </Link>
