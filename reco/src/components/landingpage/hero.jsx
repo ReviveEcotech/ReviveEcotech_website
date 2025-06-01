@@ -21,13 +21,13 @@ const Hero = () => {
 
           {/* Buttons container: centered buttons with spacing */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <Link href="/download" className="w-2/3 sm:w-auto">
-              <button className="greenbutton">
+            <Link href="/download">
+              <button className="greenbutton w-[14rem]">
                 Download the App
               </button>
             </Link>
-            <Link href="/login" className="w-2/3 sm:w-auto"> {/* Changed href to /login */}
-              <button className="bluebutton">
+            <Link href="/login"> {/* Changed href to /login */}
+              <button className="bluebutton w-[14rem]">
                 Login
               </button>
             </Link> 

@@ -15,12 +15,12 @@ const ReviveHelps = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row items-center gap-5">
                         <Link href="/download">
-                            <button className="greenbutton tester w-[14rem] ">
+                            <button className="greenbutton w-[14rem]">
                                 View Service
                             </button>
                         </Link>
                         <Link href="/login">
-                            <button className="bluebutton tester w-[14rem]">
+                            <button className="bluebutton w-[14rem]">
                                 Exchange Scrap
                             </button>
                         </Link>
