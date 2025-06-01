@@ -26,9 +26,9 @@ const TestimonialCard = ({ rating, comment, author, location }) => {
           />
         ))}
       </div>
-      <h3 className="text-xl text-black font-bold mb-4">AI+ is a game-changer!</h3>
+      <h3 className="text-xl text-neutral-300 font-extrabold mb-4">AI+ is a game-changer!</h3>
       <p className="mb-4 text-sm">{comment}</p>
-      <p className="text-sm text-black">{author} from {location}</p>
+      <p className="text-sm text-neutral-300 font-bold">{author} from {location}</p>
     </div>
   )
 }
