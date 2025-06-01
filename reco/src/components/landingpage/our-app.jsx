@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const AppPreview = () => {
+const OurApp = () => {
   return (
     <div className='mb-10'>
       <div className="mt-2 text-black md:mt-12 bg-white rounded-3xl mx-4 lg:mx-20 py-5 md:py-7 px-3 md:px-24">
@@ -58,8 +58,8 @@ const AppPreview = () => {
         <div className='flex flex-col gap-8 items-center justify-center text-base md:text-2xl font-light px-7 mt-12'>
           <p>Subscribe to get updates on our initiatives and recycling tips.</p>
           <div className='flex flex-col gap-3 w-full'>
-            <button className='bg-[#A7CB4F] rounded-4xl py-3'>Enter Your Email</button>
-            <button className='bg-[#E6F7BC] rounded-4xl py-3'>Share Response</button>
+            <button className='bg-[#A7CB4F] rounded-3xl py-3'>Enter Your Email</button>
+            <button className='bg-[#E6F7BC] rounded-3xl py-3'>Share Response</button>
           </div>
           <p className='font-normal'>© 2025 Revives. All Rights Reserved.</p>
         </div>
@@ -69,4 +69,4 @@ const AppPreview = () => {
   );
 };
 
-export default AppPreview;
+export default OurApp;

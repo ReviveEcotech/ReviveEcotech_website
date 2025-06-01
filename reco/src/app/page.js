@@ -1,6 +1,6 @@
 import OurImpact from "@/components/landingpage/our-impact";
-import Whatpeoplesay from "@/components/landingpage/what-people-say";
-import WhyChoose from "@/components/landingpage/why-choose";
+import WhatPeopleSay from "@/components/landingpage/what-people-say";
+import WhyChooseUs from "@/components/landingpage/why-choose";
 import OurApp from "@/components/landingpage/our-app";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -14,7 +14,7 @@ import Liner from "@/components/landingpage/liner";
 export default function Home() {
   return (
     <div className="overflow-x-hidden bg-white">
-      <div className="bgimage ">
+      <div className="bgimage">
         <Navbar />
         <Hero />
       </div>
@@ -22,10 +22,10 @@ export default function Home() {
       <ReviveHelps />
       <Brands />
       <HowItWorks />
-      <WhyChoose />
+      <WhyChooseUs />
       <div className="bg-[#e8e8e8] m-2 sm:m-8 p-1 rounded-3xl">
         <OurImpact />
-        <Whatpeoplesay/>
+        <WhatPeopleSay/>
       </div>
       <Questions /> 
       <OurApp />

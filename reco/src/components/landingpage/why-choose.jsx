@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
         Why Choose Revives
       </h1>
       <div className='flex flex-col md:flex-row flex-start justify-center gap-8 md:gap-10 lg:gap-20 xl:gap-28 px-10 md:px-8 lg:px-20 xl:px-36 '>
-        <div className='relative w-full self-start mb-20 md:mb-0 flex flex-col gap-4 pb-14 pt-32 px-2 lg:px-12 items-center justify-center text-center text-white bg-[#013C5A] rounded-4xl'> {/* Reduced pt-32 to pt-24 */}
+        <div className='relative w-full self-start mb-20 md:mb-0 flex flex-col gap-4 pb-14 pt-32 px-2 lg:px-12 items-center justify-center text-center text-white bg-[#013C5A] rounded-3xl'> {/* Reduced pt-32 to pt-24 */}
           {/* Rest of the code remains the same */}
           <div>
             <Image
@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
           <p className='font-mono '>Our intuitive platform makes recycling accessible to everyone.</p>
         </div>
         {/* Similar changes for other boxes */}
-        <div className='relative w-full self-start mb-20 md:mb-0 md:mt-[6rem] flex flex-col gap-4 pb-14 pt-32 px-2 lg:px-12 items-center justify-center text-center text-black bg-[#A7CB4F] rounded-4xl'> {/* Changed pt-40 to pt-32 */}
+        <div className='relative w-full self-start mb-20 md:mb-0 md:mt-[6rem] flex flex-col gap-4 pb-14 pt-32 px-2 lg:px-12 items-center justify-center text-center text-black bg-[#A7CB4F] rounded-3xl'> {/* Changed pt-40 to pt-32 */}
           {/* Second box content */}
           <div>
             <Image
@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
           <p className='font-bold text-2xl'>Rewards & Referrals</p>
           <p className='font-mono'>Earn points, discounts, and bonuses for recycling and referring friends.</p>
         </div>
-        <div className='relative w-full self-start mb-20 md:mb-0 md:mt-[14rem] flex flex-col gap-4 pb-14 pt-32 px-2 lg:px-12 items-center justify-center text-center text-white bg-[#013C5A] rounded-4xl'> {/* Changed pt-40 to pt-32 */}
+        <div className='relative w-full self-start mb-20 md:mb-0 md:mt-[14rem] flex flex-col gap-4 pb-14 pt-32 px-2 lg:px-12 items-center justify-center text-center text-white bg-[#013C5A] rounded-3xl'> {/* Changed pt-40 to pt-32 */}
           {/* Third box content */}
           <div>
             <Image

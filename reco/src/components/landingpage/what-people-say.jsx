@@ -33,7 +33,7 @@ const TestimonialCard = ({ rating, comment, author, location }) => {
   )
 }
 
-const Whatpeoplesay = () => {
+const WhatPeopleSay = () => {
   return (
     <div className='my-16 px-4 md:px-8 lg:px-12'>
       <h1 className='fontcolorgradient text-center mb-12'>
@@ -82,4 +82,4 @@ const Whatpeoplesay = () => {
   )
 }
 
-export default Whatpeoplesay
+export default WhatPeopleSay

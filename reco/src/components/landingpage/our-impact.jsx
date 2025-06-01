@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const ourimpact = () => {
+const OurImpact = () => {
   return (
     <div className='mb-40'>
       <div className='flex flex-col items-end  lg:pr-40'>  {/* Added items-end to align to right */}
@@ -82,4 +82,4 @@ const ourimpact = () => {
   )
 }
 
-export default ourimpact
+export default OurImpact
