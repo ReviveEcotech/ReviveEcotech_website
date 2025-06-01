@@ -19,9 +19,7 @@ const FaqItem = ({ question, answer }) => {
                 }
             </div>
             {isOpen && (
-                <div className='text-[1rem] md:text-[1.5rem] font-mono'>
-                    <p>{answer}</p>
-                </div>
+                <p className='text-[1rem] md:text-[1.5rem] font-mono'>{answer}</p>
             )}
         </div>
     );

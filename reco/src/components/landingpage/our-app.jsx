@@ -4,13 +4,11 @@ import Image from 'next/image';
 
 const AppPreview = () => {
   return (
-    <div className='py-5 md:py-8'>
+    <div className='mb-10'>
       <div className="mt-2 text-black md:mt-12 bg-white rounded-3xl mx-4 lg:mx-20 py-5 md:py-7 px-3 md:px-24">
         <h2 className="text-3xl  md:text-[2.5rem] text-center font-bold mb-6 md:mb-2 relative">
           Download
-          <span>
-            <span className="text-3xl md:text-[2.5rem] text-[#a7cb4f]"> Our App</span>
-          </span>
+          <span className="text-3xl md:text-[2.5rem] text-[#a7cb4f]"> Our App</span>
         </h2>
         <div className='flex flex-col xl:flex-row py-5 md:py-14 gap-10 px-4'>
           <div className='flex flex-col gap-6 items-center justify-center'>

@@ -4,9 +4,9 @@ import React from 'react'
 const HowItWorks = () => {
   return (
     <div>
-      <div className='text-black text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-24 mb-14'>
+      <h1 className='text-black text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-24 mb-14'>
         How It <span className='fontcolorgradient'>Works!</span>
-      </div>
+      </h1>
       <div className='text-black px-7 sm:px-14 md:px-24 lg:px-44 text-2xl space-y-14 sm:space-y-12 md:space-y-12 xl:space-y-1'>
 
         <div className='flex flex-row justify-end items-center gap-4 md:gap-8'>

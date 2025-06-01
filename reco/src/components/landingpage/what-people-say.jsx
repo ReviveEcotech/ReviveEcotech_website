@@ -26,7 +26,7 @@ const TestimonialCard = ({ rating, comment, author, location }) => {
           />
         ))}
       </div>
-      <h3 className="text-xl text-neutral-300 font-extrabold mb-4">AI+ is a game-changer!</h3>
+      <p className="text-xl text-neutral-300 font-extrabold mb-4">AI+ is a game-changer!</p>
       <p className="mb-4 text-sm">{comment}</p>
       <p className="text-sm text-neutral-300 font-bold">{author} from {location}</p>
     </div>
@@ -36,9 +36,9 @@ const TestimonialCard = ({ rating, comment, author, location }) => {
 const Whatpeoplesay = () => {
   return (
     <div className='my-16 px-4 md:px-8 lg:px-12'>
-      <div className='fontcolorgradient text-center mb-12'>
+      <h1 className='fontcolorgradient text-center mb-12'>
         What people say about us
-      </div>
+      </h1>
       
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:px-14'>
         <TestimonialCard

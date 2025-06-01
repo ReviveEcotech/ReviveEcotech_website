@@ -12,9 +12,9 @@ const Hero = () => {
         {/* Hero content container: centered, max-width, and specific text color for children */}
         <div className="w-full  text-[#013C5A]"> {/* Default text color for this section */}
           {/* Main Heading: Changed <p> to <h1> for semantics */}
-          <div className="mb-6 fontcolorgradient leading-tight">
+          <p className="mb-6 fontcolorgradient leading-tight">
             Turn Your Waste into Worth
-          </div>
+          </p>
           {/* Subheading */}
           <p className="text-lg sm:text-xl md:text-2xl mb-14 leading-relaxed italic text-black"> {/* Removed explicit text-black, inherits from parent */}
             Recycle smartly. Earn rewards. Help the planet.

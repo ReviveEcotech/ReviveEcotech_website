@@ -6,9 +6,9 @@ const ourimpact = () => {
     <div className='mb-40'>
       <div className='flex flex-col items-end  lg:pr-40'>  {/* Added items-end to align to right */}
 
-        <div className='fontcolorgradient my-3 sm:my-7 mx-4 text-end '>  {/* Added text-right */}
+        <h1 className='fontcolorgradient my-3 sm:my-7 mx-4 text-end '>  {/* Added text-right */}
           Our Impact
-        </div>
+        </h1>
 
         <div className='flex flex-row justify-end items-center'>  {/* Added justify-end */}
           <p className='text-black sm:my-7 mx-4 text-end'>

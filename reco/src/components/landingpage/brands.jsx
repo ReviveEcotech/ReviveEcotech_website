@@ -4,9 +4,9 @@ import React from 'react'
 const Brands = () => {
     return (
         <div className="my-12 mx-2 md:mx-8 lg:mx-12">
-            <div className='fontcolorgradient text-3xl font-bold text-center mb-6'>
+            <h1 className='fontcolorgradient text-3xl font-bold text-center mb-6'>
                 Collaborated Brands
-            </div>
+            </h1>
             <div className='bg-[#e6e6e6] rounded-3xl p-6 md:p-8'>
                 <div className='flex flex-wrap md:flex-nowrap justify-center items-center gap-4 md:gap-6'>
                     <div className='bg-white rounded-full p-4 md:p-1 flex items-center justify-center w-full md:w-1/5'>
