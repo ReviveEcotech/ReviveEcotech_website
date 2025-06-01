@@ -30,7 +30,7 @@ body {
 }
 
 .fontcolorgradient{
-  @apply bg-gradient-to-r from-[#023e5a] to-[#a4c74f] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold
+  @apply py-1 bg-gradient-to-r from-[#023e5a] to-[#a4c74f] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold
 }
 
 .greenbutton{
