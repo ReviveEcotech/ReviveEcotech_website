@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.bgimage{
+  @apply bg-[url('/landingpage/home.svg')] bg-cover bg-center bg-no-repeat;
+}
+
+.fontcolorgradient{
+  @apply py-1 bg-gradient-to-r from-[#023e5a] to-[#a4c74f] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold
+}
+
+.greenbutton{
+  @apply cursor-pointer bg-[#A7CB4F] hover:bg-[#96b83e] shadow-md text-black  text-sm sm:text-lg py-3 px-8 rounded-2xl transition-all duration-300 flex items-center justify-center hover:scale-105 
+}
+.bluebutton{
+  @apply cursor-pointer bg-[#013C5A] hover:bg-[#012c42] shadow-md text-white  text-sm sm:text-lg py-3 px-8 rounded-2xl transition-all duration-300 flex items-center justify-center hover:scale-105
+}
+.tester{
+  @apply border border-black
+}
+
+.scaler{
+  @apply scale-100 hover:scale-110 transition-all duration-300 ease-in-out
+}
