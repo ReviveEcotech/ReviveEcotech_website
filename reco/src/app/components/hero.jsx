@@ -13,7 +13,7 @@ const Hero = () => {
         {/* Hero content */}
         <div
           className="text-black max-w-2xl mb-12 md:mb-0 lg:pr-10">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight >">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Turn Your Waste into Worth
           </h1>
 
