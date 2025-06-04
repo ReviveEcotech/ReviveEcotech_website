@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --price_header_bg: #8F8F8F;
+  --price_header_heading: #013C5A;
 }
 
 @theme inline {
@@ -46,3 +48,4 @@ body {
 .scaler{
   @apply scale-100 hover:scale-110 transition-all duration-300 ease-in-out
 }
+
