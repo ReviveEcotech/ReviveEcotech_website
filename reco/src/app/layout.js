@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Revive Ecotech",
+  title: "Revive EcoTech",
   description: "Revive Ecotech is a platform that connects people with local waste management services to promote recycling and reduce waste.",
 };
 
